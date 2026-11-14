@@ -36,7 +36,4 @@ npm run build    # static site in dist/ (deploy to Vercel as-is)
 - Rows appear in manifest order. Any number of tracks works.
 - A missing or undecodable file shows as an "unavailable" row. The other tracks still play.
 
-The `placeholder-*.wav` files are generated automatically on `dev`/`build` for as long as
-the manifest references them. Once the manifest points only at real recordings, nothing is generated.
-
 See [SPIN_UP.md](SPIN_UP.md) for a map of the code.

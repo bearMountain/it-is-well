@@ -5,10 +5,7 @@
   "description": "It Is Well - harmony practice player (mobile web multitrack mixer)",
   "type": "module",
   "scripts": {
-    "placeholders": "node scripts/gen-placeholders.mjs",
-    "predev": "npm run placeholders",
     "dev": "vite",
-    "prebuild": "npm run placeholders",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview"
   },

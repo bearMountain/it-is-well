@@ -1,10 +1,9 @@
 {
   "title": "It Is Well",
-  "note": "Placeholder tones. Real recordings coming soon.",
   "tracks": [
-    { "id": "full-mix", "label": "Full Mix", "file": "placeholder-mix.wav", "color": "#a855f7" },
-    { "id": "rachel", "label": "Rachel", "file": "placeholder-high.wav", "color": "#f97316" },
-    { "id": "jeff", "label": "Jeff", "file": "placeholder-mid.wav", "color": "#22c55e" },
-    { "id": "vince", "label": "Vince", "file": "placeholder-low.wav", "color": "#3b82f6" }
+    { "id": "full-mix", "label": "Full Mix", "file": "full-mix.mp3", "color": "#a855f7" },
+    { "id": "rachel", "label": "Rachel", "file": "rachel.mp3", "color": "#f97316" },
+    { "id": "jeff", "label": "Jeff", "file": "jeff.mp3", "color": "#22c55e" },
+    { "id": "vince", "label": "Vince", "file": "vince.mp3", "color": "#3b82f6" }
   ]
 }
