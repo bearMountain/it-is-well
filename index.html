@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f5f7" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e1014" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="description" content="Harmony practice player for It Is Well" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>" />
+    <title>It Is Well</title>
+  </head>
+  <body>
+    <header class="app-header">
+      <h1 id="title">It Is Well</h1>
+      <p id="note" class="note" hidden></p>
+      <div id="loading" class="loading" role="status">
+        <div class="loading-bar"><div id="loading-fill" class="loading-fill"></div></div>
+        <span id="loading-text">Loading tracks…</span>
+      </div>
+    </header>
+
+    <main>
+      <p id="error" class="error" role="alert" hidden></p>
+      <ol id="tracks" class="tracks"></ol>
+    </main>
+
+    <footer class="transport">
+      <div class="transport-info">
+        <span class="clock"><span id="time">0:00</span> <span class="muted-text">/ <span id="duration">0:00</span></span></span>
+        <span id="loop-info" class="loop-info" hidden>
+          <span id="loop-text"></span>
+          <button id="loop-clear" type="button" class="loop-clear" aria-label="Clear loop">×</button>
+        </span>
+      </div>
+      <div class="transport-buttons">
+        <button id="restart" type="button" class="tbtn" aria-label="Restart" title="Restart (Home)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM9.5 12 19 5v14z" /></svg>
+        </button>
+        <button id="set-a" type="button" class="tbtn tbtn-text" aria-label="Set loop start at playhead" title="Set loop start (A)">A</button>
+        <button id="play" type="button" class="tbtn play" aria-label="Play" title="Play / pause (Space)">
+          <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" /></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" /></svg>
+        </button>
+        <button id="set-b" type="button" class="tbtn tbtn-text" aria-label="Set loop end at playhead" title="Set loop end (B)">B</button>
+        <button id="loop" type="button" class="tbtn" aria-label="Loop A to B" title="Loop A–B" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 7h10v3l4-4-4-4v3H5v6h2zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2z" />
+          </svg>
+        </button>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
