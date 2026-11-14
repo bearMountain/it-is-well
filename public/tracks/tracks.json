@@ -1,0 +1,10 @@
+{
+  "title": "It Is Well",
+  "note": "Placeholder tones. Real recordings coming soon.",
+  "tracks": [
+    { "id": "part-1", "label": "Part 1", "file": "placeholder-high.wav", "color": "#f97316" },
+    { "id": "part-2", "label": "Part 2", "file": "placeholder-mid.wav", "color": "#22c55e" },
+    { "id": "part-3", "label": "Part 3", "file": "placeholder-low.wav", "color": "#3b82f6" },
+    { "id": "full-mix", "label": "Full mix", "file": "placeholder-mix.wav", "color": "#a855f7" }
+  ]
+}

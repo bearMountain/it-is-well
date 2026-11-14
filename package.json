@@ -1,0 +1,19 @@
+{
+  "name": "it-is-well",
+  "private": true,
+  "version": "0.1.0",
+  "description": "It Is Well - harmony practice player (mobile web multitrack mixer)",
+  "type": "module",
+  "scripts": {
+    "placeholders": "node scripts/gen-placeholders.mjs",
+    "predev": "npm run placeholders",
+    "dev": "vite",
+    "prebuild": "npm run placeholders",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
