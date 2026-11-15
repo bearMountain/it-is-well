@@ -1,6 +1,6 @@
 import type { MixState } from './engine';
 
-const KEY = 'it-is-well:mix:v1';
+const KEY = 'it-is-well:mix:v2';
 
 export function loadMix(): Record<string, MixState> {
   try {

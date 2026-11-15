@@ -33,6 +33,7 @@ npm run build    # static site in dist/ (deploy to Vercel as-is)
 - `file` is relative to `public/tracks/`.
 - `id` must be unique and stable, because saved volume/mute/solo settings are keyed by it.
 - `color` is optional; a default palette is used if it's omitted.
+- `muted` is optional; set it to `true` to start the track muted for first-time visitors.
 - Rows appear in manifest order. Any number of tracks works.
 - A missing or undecodable file shows as an "unavailable" row. The other tracks still play.
 

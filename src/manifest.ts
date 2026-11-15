@@ -6,6 +6,8 @@ export interface TrackDef {
   /** Path as written in the manifest, for error messages. */
   file: string;
   color: string;
+  /** Initial mute state when no saved mixer settings exist. */
+  muted: boolean;
 }
 
 export interface Manifest {
@@ -41,6 +43,7 @@ export async function loadManifest(): Promise<Manifest> {
       file: t.file,
       url: new URL(t.file, base).href,
       color: typeof t.color === 'string' && t.color ? t.color : FALLBACK_COLORS[i % FALLBACK_COLORS.length],
+      muted: t.muted === true,
     };
   });
 

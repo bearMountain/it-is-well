@@ -232,7 +232,7 @@ async function init(): Promise<void> {
     const s = saved[def.id];
     const state: MixState = {
       volume: typeof s?.volume === 'number' ? s.volume : 1,
-      muted: s?.muted === true,
+      muted: typeof s?.muted === 'boolean' ? s.muted : def.muted,
       soloed: s?.soloed === true,
     };
     return new TrackRow(def, state, applyMix, scrub);

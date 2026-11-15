@@ -17,7 +17,7 @@ Vite + vanilla TypeScript, no backend. Deployed to Vercel as a static site.
 ```
 index.html               Page shell: header, track list, sticky transport
 public/tracks/
-  tracks.json            Track manifest (id, label, file, color) - edit this to add/rename tracks
+  tracks.json            Track manifest (id, label, file, color, optional muted) - edit this to add/rename tracks
   *.mp3 / *.wav          Audio files, served as-is at /tracks/...
 src/
   main.ts                Bootstrap: load manifest, load/decode tracks, transport, render loop, keyboard
